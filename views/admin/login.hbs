@@ -1,0 +1,18 @@
+<div class="login-box">
+      <img src="/images/logo-lh2.png" class="avatar" alt="Avatar Image">
+      <h1>Ingresar </h1>
+      <form action="/admin/login" method="POST">
+        
+        <label for="username">Usuario</label>
+        <input type="text" placeholder="Usuario/Email" name="usuario">
+       
+        <label for="password">Password</label>
+        <input type="password" placeholder="Ingresar contrasena" name="password">
+        <input type="submit" value="Ingresar">
+        <a href="#">Olvidaste la contrasena</a><br>
+        <a href="#">Todavia no te registraste? Registrate aqui</a>
+      </form>
+        {{#if error}}
+        <p>Usuario no existe</p>
+        {{/if}}
+    </div>

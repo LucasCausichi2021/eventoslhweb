@@ -1,0 +1,55 @@
+
+
+
+    <div class="login-box1">
+      <img src="/images/logo-lh2.png" class="avatar" alt="Avatar Image">
+      
+
+      <h1>Agregar la promocion </h1>
+      <form action="/admin/Promociones/agregar/" method="post" enctype="multipart/form-data">
+        
+        
+      
+       <div class="mb-3">
+
+                <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+
+            </div>
+
+            <div class="mb-3">
+                <textarea type="text"
+                class="form-control"
+                placeholder="Subtitulo" rows="5"
+                name="subtitulo"></textarea>
+
+               
+            </div>
+
+            <div class="mb-3">
+                <label>Imagen <input type="file" placeholder="imagen" class="form-control" name="imagen"  ></label>  
+            </div>
+
+            <div class="mb-3">
+                <textarea type="text"
+                class="form-control"
+                placeholder="cuerpo" rows="5"
+                name="cuerpo"></textarea>
+
+               
+            </div>
+       
+        
+       
+
+        
+        <input type="submit" style="width: 50%;" value="Grabar">
+       
+        
+      </form>
+      {{#if error}}
+        <p>{{message}}</p>
+        {{/if }}
+      
+      
+       
+    </div> 

@@ -1,0 +1,37 @@
+
+        <!-- Imagen del header -->
+        <div class="img-header">
+            <div class="bienvenidos">
+                <h1>Promociones Eventos LH</h1>
+                
+                <button id="abajo">ver abajo</button>
+
+                <hr>
+
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <main class="holder">
+        <h2>Promociones</h2>
+        {{#each promociones}}
+        <div class="promociones" style="color:white; text-align:center; " >
+            <h3 style="margin:30px 60px 20px 60px;">{{titulo}}</h3>
+            <h4 style="margin:30px 60px 20px 60px;">{{subtitulo}}</h4>
+            {{#if imagen}}
+                  <img src="{{imagen}}" alt="{{titulo}}">
+            {{/if }}
+            <p style="margin:30px 60px 20px 60px;">{{cuerpo}} </p>
+            <hr />
+
+
+        </div>
+        {{/each}}
+
+        
+
+    </main>
