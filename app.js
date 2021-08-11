@@ -10,7 +10,7 @@ var session = require('express-session')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var promocionesRouter = require('./routes/Promociones');
+var promocionesRouter = require('./routes/promociones');
 
 var loginRouter = require('./routes/admin/login');
 var promocionesAdminRouter = require('./routes/admin/Promociones');
